@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coinflip Game</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+
+        #connectWallet {
+            font-size: 20px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        #gameArea {
+            margin-top: 20px;
+        }
+
+        #gameArea input, #gameArea button {
+            font-size: 18px;
+            padding: 10px 20px;
+            margin: 5px;
+            cursor: pointer;
+        }
+
+        #gameArea input {
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Coinflip Game</h1>
+    <button id="connectWallet">Connect Wallet</button>
+    <div id="gameArea" style="display:none;">
+        <input type="number" id="betAmount" placeholder="Enter amount">
+        <button id="flipHeads">Flip Heads</button>
+        <button id="flipTails">Flip Tails</button>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('connectWallet').addEventListener('click', function() {
+                alert('Wallet Connected!');
+                document.getElementById('gameArea').style.display = 'block';
+            });
+
+            document.getElementById('flipHeads').addEventListener('click', function() {
+                alert('You chose heads!');
+            });
+
+            document.getElementById('flipTails').addEventListener('click', function() {
+                alert('You chose tails!');
+            });
+        });
+    </script>
+</body>
+</html>
