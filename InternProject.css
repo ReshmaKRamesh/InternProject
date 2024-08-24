@@ -1,0 +1,22 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 50px;
+}
+
+#connectWallet {
+    font-size: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#gameArea {
+    margin-top: 20px;
+}
+
+#gameArea button {
+    font-size: 18px;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+}
